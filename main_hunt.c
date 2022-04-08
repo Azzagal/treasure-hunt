@@ -16,7 +16,7 @@
 #include "controller_hunt.h"
 
 void delete_window(GtkWidget *pF, gpointer data){
-  gtk_main_quit();
+    gtk_main_quit();
 }
 
 
@@ -102,5 +102,8 @@ int main(int argc, char **argv){
     
     gtk_main();
 
+    free_model(mh);
+    free_view(vh);
+    free_controller(ch);
     return EXIT_SUCCESS;
 }

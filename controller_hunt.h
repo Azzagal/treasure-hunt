@@ -141,4 +141,13 @@ GtkWidget *get_Button_Restart(ControllerHunt *ch);
  * \param pButton a pointer on GtkWidget.
  */
 void set_Button_Restart(ControllerHunt *ch,GtkWidget *pButton);
+
+/**
+ * \fn void free_controller(ControllerHunt *ch)
+ *
+ * \brief Free the memory previously allocated for the structure ControllerHunt.
+ *
+ * \param ch a pointer on ControllerHunt.
+ */
+void free_controller(ControllerHunt *ch);
 #endif //__CONTROLLER_HUNT__

@@ -176,3 +176,8 @@ void set_Button_Restart(ControllerHunt *ch,GtkWidget *pButton){
     assert(ch!=NULL && pButton!=NULL);
     ch->pButtonRestart = pButton;
 }
+
+void free_controller(ControllerHunt *ch){
+    assert(ch!=NULL);
+    free(ch);
+}

@@ -73,3 +73,8 @@ void set_LabelI(ViewHunt *vh,GtkWidget *pLabel){
     assert(vh!=NULL && pLabel!=NULL);
     vh->pLabelI = pLabel;
 }//end set_LabelI()
+
+void free_view(ViewHunt *vh){
+    assert(vh!=NULL);
+    free(vh);
+}

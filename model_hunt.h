@@ -103,4 +103,13 @@ unsigned get_victory(ModelHunt *mh);
  * \return the defeat member from the struc ModelHunt.
  */
 unsigned get_defeat(ModelHunt *mh);
+
+/**
+ * \fn void free_model(ModelHunt *ch)
+ *
+ * \brief Free the memory previously allocated for the structure ModelHunt.
+ *
+ * \param mh a pointer on ModelHunt.
+ */
+void free_model(ModelHunt *mh);
 #endif //__MODEL_HUNT__

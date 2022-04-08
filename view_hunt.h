@@ -85,4 +85,13 @@ GtkWidget *get_LabelI(ViewHunt *vh);
  * \param pLabel a pointer on GtkWidget.
  */
 void set_LabelI(ViewHunt *vh,GtkWidget *pLabel);
+
+/**
+ * \fn void free_view(ViewHunt *vh)
+ *
+ * \brief Free the memory previously allocated for the structure ViewHunt.
+ *
+ * \param mh a pointer on ViewHunt.
+ */
+void free_view(ViewHunt *vh);
 #endif //__VIEW_HUNT__

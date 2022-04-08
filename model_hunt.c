@@ -88,3 +88,8 @@ unsigned get_defeat(ModelHunt *mh){
 
     return mh->d;
 }
+
+void free_model(ModelHunt *mh){
+    assert(mh!=NULL);
+    free(mh);
+}
